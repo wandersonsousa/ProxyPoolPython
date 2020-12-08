@@ -1,4 +1,4 @@
-from scrap_proxies import scrape_freeproxylists
+from scraping.scrap_proxies import scrape_freeproxylists
 
 proxyScraper = scrape_freeproxylists()
 

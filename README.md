@@ -24,5 +24,11 @@ $ python scrap_now.py
 
 ### How to rotate proxy pool scrapped
 
+Go to src directory and run the start_proxy_pool.py file
 
+```sh
+$ cd src
+$ python start_proxy_pool.py
+```
+*Great!*, now you are making requests without risk of block
 

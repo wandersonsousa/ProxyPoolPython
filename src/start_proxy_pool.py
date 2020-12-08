@@ -15,7 +15,8 @@ for i in range(0, 10):
 
     proxy = next(proxy_pool)
     try:
-        response = requests.get(url,proxies={"http": proxy, "https": proxy})
-        print("Origem da request:", response.json() )
+        response = requests.get(url,proxies={"http": proxy, "https": proxy}, timeout=5)
+        print("Request Origin:", response.json() )
     except:
+        # if the request fails, the proxy is removed from the pool
         list_of_proxies.remove(proxy)
